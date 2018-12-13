@@ -1,0 +1,84 @@
+body {
+  background-color: black;
+}
+
+p {
+	color: white;
+}
+
+h2 {
+	color: white;
+}
+
+
+
+.white{
+	color: white;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+.green{
+	color: 	#4CC831;
+}
+
+.blue{
+	color: #3766A1;
+}
+
+.purple{
+	color: #8945A5;
+}
+
+.gold{
+	color: #B08119;
+}
+
+.red{
+	color:red;
+}
+.explosive{
+font-size: 30px;
+
+}
+
+.middleText{
+	background-color: #3F628A;
+		text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+	
+}
+
+.middleTextColor{
+	color: #6DAAAA;
+}
+
+.item{
+	background-color: #2F334F;
+	width: 500px;
+	border-width:5px;
+	border-style:solid;
+	border-color:#6DAAAA;
+}
+
+.textShadow{
+text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+#title{
+	text-align:center;
+}
+
+.alignRight{
+	float: right;
+}
