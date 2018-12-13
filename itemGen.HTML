@@ -662,9 +662,14 @@ function barrelsPistol(weapon){
 
 
 //////////add in extra dammage for barrel upgrade
+/* var postDamage= "";
+if(itemType == pistol){
+	if(weapon.barrels > 0){
+		postDamage = weapon.damage;
+	}
+} */
 
-
-		///////////////////////////change color of damage text depending on element)/////////////////////////
+		///////////////////////////change color of damage text depending on element and post damage)/////////////////////////
 
 		if (element == "Corrosive"){
 			document.getElementById("damage").className = "green";
@@ -688,21 +693,39 @@ function barrelsPistol(weapon){
 			document.getElementById("damage").innerHTML = "<b>Damage</b>: <span class ='alignRight'>"+ bulletDamageLevel[damage]+"</span>";
 		}
 
+
+////ad in ranges
 		document.getElementById("range").innerHTML =	"<b>Range</b>: <span class ='alignRight'>"+ rangeLevelClose[rangeClose]+ "/"+ rangeLevelMedium[rangeMedium] + "/" + rangeLevelLong[rangeLong]+"</span>";
+
+		/////add in rate of fire
 
 		if (rateOfFire < 1){ rateOfFire = 1};
 		document.getElementById("rateOfFire").innerHTML ="Rate of Fire: <span class ='alignRight'>" + rateOfFire+"</span>" ;
-		document.getElementById("weight").innerHTML ="Weight: <span class ='alignRight'>" +weight +"</span>";	
+
+
+		//add in weight
+		document.getElementById("weight").innerHTML ="Weight: <span class ='alignRight'>" +weight +"</span>";
+
+
+		/// add in max ammo	
 		document.getElementById("clip").innerHTML = "Clip Size: <span class ='alignRight'>" + clip+ "</span>";
+
+
+		///add in min str to use item
 		if(str != 0){
 		document.getElementById("str").innerHTML = "Stength to Weild: <span class ='alignRight'>" + str + "</span>";
 					}
+
+
+					// add in armor penitration
 		document.getElementById("armorPenitration").innerHTML = "Armor Penitration: <span class ='alignRight'>" +armorPenitration + "</span>";	
 		special = "";
 		if (8 < weapon.length){
 			for (i =9; i < weapon.length; i++ ){
 			special += "&bull; " + weapon[i] + "<br>";
 													}
+
+		/// add in the special qualities of the weapon
 		var postSpecial = special;	
 		special = "";										
 		document.getElementById("special").innerHTML = postSpecial;
